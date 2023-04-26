@@ -120,6 +120,7 @@ export class ProgressCircle extends Component {
     return (
       <View style={[styles.container, style]} {...restProps}>
         <Surface
+          fill="none"
           width={size}
           height={size}
           style={
@@ -168,6 +169,7 @@ export class ProgressCircle extends Component {
           )}
           {border ? (
             <Arc
+              fill={fill}
               radius={size / 2}
               startAngle={0}
               endAngle={(indeterminate ? endAngle * 2 : 2) * Math.PI}
